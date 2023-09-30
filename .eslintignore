@@ -1,0 +1,12 @@
+setupProxy.js
+node_modules
+build
+package-lock.json
+vite.config.ts
+.vscode
+*.DS_Store
+*.yml
+*.yaml
+*.html
+*.css
+*.json

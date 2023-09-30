@@ -1,0 +1,83 @@
+{
+  "proxy": "http://op-release-1-16-0.platform.kuber2.3divi.ru",
+  "name": "@3divi/cloud",
+  "version": "1.16.0",
+  "private": true,
+  "scripts": {
+    "on-prem-build-cloud": "tsc && vite build --mode on-premise",
+    "start-cloud": "vite",
+    "build-cloud": "tsc && vite build",
+    "check-types": "tsc --noemit",
+    "eslint-cloud": "eslint src/ --ext .js,.jsx,.ts,.tsx --quiet",
+    "errors": "eslint src/ --ext .js,.jsx,.ts,.tsx --quiet ",
+    "fix-cloud": "eslint src/ --fix --ext .js,.jsx,.ts,.tsx",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,ts,tsx}\""
+  },
+  "dependencies": {
+    "@3divi/shared-components": "1.0.0",
+    "@apollo/client": "^3.7.0",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "date-fns": "^2.29.3",
+    "dotenv": "16.0.3",
+    "formik": "^2.2.9",
+    "framer-motion": "^7.6.1",
+    "graphql": "^16.6.0",
+    "http-proxy-middleware": "^2.0.6",
+    "i18next": "^22.0.2",
+    "i18next-browser-languagedetector": "^7.0.0",
+    "imask": "^6.4.3",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "phosphor-react": "^1.4.1",
+    "react": "18.2.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "18.2.0",
+    "react-gtm-module": "2.0.11",
+    "react-i18next": "^11.16.4",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
+    "react-textarea-autosize": "^8.3.4",
+    "react-use-websocket": "^4.2.0",
+    "use-imask": "^2.0.0",
+    "yup": "^0.32.11",
+    "react-day-picker": "^8.3.6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^4.4.2",
+    "@types/react-gtm-module": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4",
+    "@vitejs/plugin-react": "^2.1.0",
+    "vite": "^3.1.8",
+    "vite-plugin-checker": "^0.5.1",
+    "@types/js-cookie": "^3.0.2",
+    "@types/node": "^18.11.6",
+    "@types/react": "^18.0.23",
+    "@types/react-dom": "^18.0.7"
+  }
+}
